@@ -227,7 +227,7 @@ h4 {
 }
 
 
-h1.title, .page-properties {
+h1.title, .page-properties, .block-properties, .page-hierachy {
   display: none; / *hide title* /
 }
 
