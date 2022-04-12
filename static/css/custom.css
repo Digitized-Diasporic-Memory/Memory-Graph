@@ -1,0 +1,888 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+
+/*Plyr css*/
+@import url(https://unpkg.com/plyr@3/dist/plyr.css);
+
+@font-face {
+  font-family: "Standard";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://candideu.github.io/Standard/webfonts/standard-book-webfont.eot");
+  src: local(""),
+    url("https://candideu.github.io/Standard/webfonts/standard-book-webfont.eot")
+      format("embedded-opentype"),
+    url("https://candideu.github.io/Standard/webfonts/standard-book-webfont.woff2")
+      format("woff2"),
+    url("https://candideu.github.io/Standard/webfonts/standard-book-webfont.woff")
+      format("woff"),
+    url("https://candideu.github.io/Standard/webfonts/standard-book-webfont.ttf")
+      format("truetype"),
+    url("https://candideu.github.io/Standard/webfonts/standard-book-webfont.svg")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Standard";
+  font-style: italic;
+  font-weight: normal;
+  src: url("https://candideu.github.io/Standard/webfonts/standard-book-italic-webfont.eot");
+  src: local(""),
+    url("https://candideu.github.io/Standard/webfonts/standard-book-italic-webfont.eot")
+      format("embedded-opentype"),
+    url("https://candideu.github.io/Standard/webfonts/standard-book-italic-webfont.woff2")
+      format("woff2"),
+    url("https://candideu.github.io/Standard/webfonts/standard-book-italic-webfont.woff")
+      format("woff"),
+    url("https://candideu.github.io/Standard/webfonts/standard-book-italic-webfont.ttf")
+      format("truetype"),
+    url("https://candideu.github.io/Standard/webfonts/standard-book-italic-webfont.svg")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Standard";
+  font-style: normal;
+  font-weight: bold;
+  src: url("https://candideu.github.io/Standard/webfonts/standard-bold-webfont.eot");
+  src: local(""),
+    url("https://candideu.github.io/Standard/webfonts/standard-bold-webfont.eot")
+      format("embedded-opentype"),
+    url("https://candideu.github.io/Standard/webfonts/standard-bold-webfont.woff2")
+      format("woff2"),
+    url("https://candideu.github.io/Standard/webfonts/standard-bold-webfont.woff")
+      format("woff"),
+    url("https://candideu.github.io/Standard/webfonts/standard-bold-webfont.ttf")
+      format("truetype"),
+    url("https://candideu.github.io/Standard/webfonts/standard-bold-webfont.svg")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Standard";
+  font-style: italic;
+  font-weight: bold;
+  src: url("https://candideu.github.io/Standard/webfonts/standard-bold-italic-webfont.eot");
+  src: local(""),
+    url("https://candideu.github.io/Standard/webfonts/standard-bold-italic-webfont.eot")
+      format("embedded-opentype"),
+    url("https://candideu.github.io/Standard/webfonts/standard-bold-italic-webfont.woff2")
+      format("woff2"),
+    url("https://candideu.github.io/Standard/webfonts/standard-bold-italic-webfont.woff")
+      format("woff"),
+    url("https://candideu.github.io/Standard/webfonts/standard-bold-italic-webfont.ttf")
+      format("truetype"),
+    url("https://candideu.github.io/Standard/webfonts/standard-bold-italic-webfont.svg")
+      format("svg");
+}
+
+:root {
+  --ls-font-family: "Syne", sans-serif;
+  --ls-main-content-max-width: 900px;
+  --ls-tag-text-opacity: 0.6;
+  --ls-tag-text-hover-opacity: 0.8;
+  --ls-page-text-size: 1.5em;
+  --ls-page-title-size: 36px;
+
+  /*audio player*/
+  --plyr-color-main: #ff7300;
+  --plyr-audio-controls-background: transparent;
+  --plyr-audio-control-color: #0f6d35;
+  --plyr-font-family: inherit;
+  --plyr-menu-background: #f9ce00;
+  --plyr-audio-progress-buffered-background: rgba(255, 115, 0, 0.3);
+  --plyr-tooltip-background: #c19d00;
+  --plyr-tooltip-color: #241000;
+  --plyr-menu-color: #241000;
+  --plyr-range-thumb-background: #0f6d35;
+}
+
+.cp__sidebar-main-layout {
+  background: none;
+}
+
+/***************************************************************
+***************************** TOP ******************************
+***************************************************************/
+
+#head .repos {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#head {
+  background: none;
+}
+
+/* import (arrows) icon */
+
+#head .ml-2.mr-1 svg {
+  height: 17px;
+}
+
+/* gradient on top and bottom for aesthetics */
+
+/*
+
+.cp__sidebar-main-content:before {
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.cp__sidebar-main-content:after {
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+*/
+
+/* < > buttons */
+
+a[title="Go Back"],
+a[title="Go Forward"] {
+  border-radius: 3px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+/* search-field */
+
+#search-wrapper {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#search-wrapper:hover,
+#search-wrapper:focus-within {
+  opacity: 1;
+}
+
+#search-wrapper > div:first-child {
+  left: 10px;
+}
+
+#search > .inner {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+#search_field:focus {
+  background: var(--ls-search-background-color);
+}
+
+/***************************************************************
+************************** MAIN AREA ***************************
+***************************************************************/
+
+/* blocks with background */
+
+[style="background-color: rgb(73, 125, 70); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(83, 62, 125); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(120, 127, 151); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(151, 134, 38); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(73, 118, 123); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(121, 62, 62); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"] {
+  border-radius: 3px;
+  padding: 5px 6px;
+}
+
+/* vertical lines */
+
+.block-children {
+  border-left: 1px solid var(--ls-guideline-color);
+}
+
+/* weird vertical border on the left side of the screen */
+
+#sidebar-nav-wrapper {
+  border: none !important;
+}
+
+/* text mark/highlight */
+
+mark {
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+
+/* page title */
+
+h1.title,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Standard", sans-serif;
+  font-weight: 900;
+}
+
+
+h1.title, .page-properties {
+  display: none; / *hide title* /
+}
+
+h1 {
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-top: 1em; /*add more space abive headings*/
+  padding-bottom: 0.2em; /*add more space below headings and underneath line*/
+}
+
+/* page reference */
+
+.page-reference {
+  border-radius: 3px;
+  padding: 2px 0px;
+  transition: 0.3s;
+}
+
+.page-reference .text-gray-500 {
+  opacity: 0.5;
+}
+
+/* block references */
+
+.block-ref {
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-style: italic;
+}
+
+.block-ref .block-ref {
+  padding: 6px 5px;
+  border: none;
+}
+
+/* checkbox */
+
+.form-checkbox {
+  border-radius: 2px;
+  z-index: 1;
+  position: relative;
+}
+
+.marker-switch {
+  border: none;
+  opacity: 1;
+  padding: 0;
+  height: 20px;
+  font-weight: 700;
+  margin: 0 5px 0 2px;
+  line-height: 20px;
+  transition: 0.3s;
+}
+
+.marker-switch {
+  margin-left: -23px;
+  padding-left: 24px;
+  padding-right: 14px;
+}
+
+/* inline code */
+
+:not(pre) > code {
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-family: MonoLisa, "Fira Code", Monaco, Menlo, Consolas, "COURIER NEW",
+    monospace;
+  padding: 3px 5px !important;
+}
+
+/***************************************************************
+************************ RIGHT SIDEBAR *************************
+***************************************************************/
+
+.cp__right-sidebar-topbar {
+  background: none;
+}
+
+.cp__right-sidebar .sidebar-item {
+  padding: 10px 20px 10px 2px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/***************************************************************
+**************************** MISC ******************************
+***************************************************************/
+
+a {
+  transition: 0.3s;
+}
+
+/* Calendar */
+
+.cp__sidebar-main-content .logseq-tools-multiple-calendars {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+
+.cp__sidebar-main-content
+  .logseq-tools-multiple-calendars
+  .logseq-tools-calendar {
+  flex: 0 50%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.logseq-tools-calendar tr {
+  background: none !important;
+}
+
+.logseq-tools-calendar th,
+.logseq-tools-calendar td,
+.logseq-tools-calendar tr {
+  border: none;
+}
+
+.logseq-tools-calendar th,
+.logseq-tools-calendar td {
+  text-align: center;
+}
+
+/* Calendar - pages from other months */
+
+.logseq-tools-calendar .outofmonth {
+  opacity: 0.3;
+}
+
+/***************************************************************
+****************************************************************
+****************************************************************
+************************ DARK - COFFEE *************************
+****************************************************************
+****************************************************************
+***************************************************************/
+
+.dark-theme,
+html[data-theme="dark"] {
+  --ls-primary-background-color: #211c1b;
+  --ls-secondary-background-color: #27211f;
+  --ls-tertiary-background-color: #2b2524;
+  --ls-quaternary-background-color: #241000;
+  --ls-table-tr-even-background-color: #362f2e;
+  --ls-active-primary-color: #c28eaa;
+  --ls-active-secondary-color: #e8d0dc;
+  --ls-block-properties-background-color: var(--ls-secondary-background-color);
+  --ls-block-ref-link-text-color: #b9543b;
+  --ls-search-background-color: var(--ls-primary-background-color);
+  --ls-border-color: #473134;
+  --ls-guideline-color: #2f2928;
+  --ls-menu-hover-color: var(--ls-secondary-background-color);
+  --ls-primary-text-color: #9e836d;
+  --ls-secondary-text-color: #dbd7d5;
+  --ls-title-text-color: #9e836d;
+  --ls-link-text-color: #dd745b;
+  --ls-link-text-hover-color: #eb8e77;
+  --ls-link-ref-text-color: #79b990;
+  --ls-link-ref-text-hover-color: #93cea9;
+  --ls-tag-text-color: var(--ls-link-text-color);
+  --ls-tag-text-hover-color: var(--ls-link-text-hover-color);
+  --ls-slide-background-color: var(--ls-primary-background-color);
+  --ls-block-bullet-border-color: #61554d;
+  --ls-block-bullet-color: #423834;
+  --ls-block-highlight-color: #064645;
+  --ls-selection-background-color: #ab3641;
+  --ls-page-checkbox-color: #935c62;
+  --ls-page-checkbox-border-color: var(--ls-primary-background-color);
+  --ls-page-blockquote-color: var(--ls-primary-text-color);
+  --ls-page-blockquote-bg-color: #1d1614;
+  --ls-page-blockquote-border-color: #3c2629;
+  --ls-page-inline-code-color: var(--ls-primary-text-color);
+  --ls-page-inline-code-bg-color: #1b1715;
+  --ls-scrollbar-foreground-color: rgba(255, 255, 255, 0.05);
+  --ls-scrollbar-background-color: rgba(67, 30, 41, 0.9);
+  --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
+  --ls-head-text-color: #9e836d;
+  --ls-icon-color: #635553;
+  --ls-search-icon-color: #635553;
+  --ls-a-chosen-bg: var(--ls-secondary-background-color);
+  --ls-right-sidebar-code-bg-color: #3c041f;
+  --color-level-1: var(--ls-secondary-background-color);
+  --color-level-2: var(--ls-tertiary-background-color);
+  --color-level-3: var(--ls-quaternary-background-color);
+  --color-level-4: #632f46;
+  --color-level-5: #865673;
+  --color-level-6: #9e6889;
+
+  --ls-primary-background-color: #f9ce00;
+  --ls-search-background-color: #f3ecd8 /*f1ece5*/;
+  --ls-secondary-background-color: #ff7300 /*E8E3DB*/;
+  --ls-tertiary-background-color: #efe6cc /*#e7e1d7*/;
+  --ls-quaternary-background-color: #241000 /*#e1dbd0*/;
+  --ls-block-properties-background-color: var(--ls-secondary-background-color);
+  --ls-block-bullet-border-color: #dedede;
+  --ls-block-bullet-color: rgba(67, 63, 56, 0.25);
+  --ls-guideline-color: rgba(46, 27, 5, 0.08);
+  --ls-primary-text-color: #232323 /*433F38*/;
+  --ls-title-text-color: var(--ls-primary-text-color);
+  --ls-link-text-color: #72866c;
+  --ls-link-text-hover-color: #949e91;
+  --ls-link-ref-text-color: #9f5d5d;
+  --ls-link-ref-text-hover-color: #743d3d;
+  --ls-tag-text-color: var(--ls-link-ref-text-color);
+  --ls-tag-text-hover-color: var(--ls-link-ref-text-hover-color);
+  --ls-page-checkbox-color: #b0c3ad;
+  --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
+  --ls-page-blockquote-border-color: #7d9bb1;
+  --ls-block-highlight-color: #d4d1cd;
+  --ls-icon-color: #c1bdb7;
+  --color-level-1: var(--ls-secondary-background-color);
+  --color-level-2: var(--ls-tertiary-background-color);
+}
+
+/***************************************************************
+***************************** TOP ******************************
+***************************************************************/
+
+/* gradient on top for aesthetics */
+
+.dark-theme .cp__sidebar-main-content:before {
+  background: linear-gradient(
+    to bottom,
+    rgba(33, 28, 27, 0.7) 0%,
+    rgba(33, 28, 27, 0) 100%
+  );
+}
+
+.dark-theme .cp__sidebar-main-content:after {
+  background: linear-gradient(
+    to top,
+    rgba(33, 28, 27, 0.7) 0%,
+    rgba(33, 28, 27, 0) 100%
+  );
+}
+
+/* < > buttons */
+
+.dark-theme a[title="Go Back"],
+.dark-theme a[title="Go Forward"] {
+  background: var(--ls-primary-background-color);
+}
+
+.dark-theme a[title="Go Back"]:hover,
+.dark-theme a[title="Go Forward"]:hover {
+  background: var(--ls-secondary-background-color);
+}
+
+/* search-field */
+
+.dark-theme #search_field {
+  background: linear-gradient(
+    to right,
+    rgba(39, 33, 33, 1) 0%,
+    rgba(39, 33, 33, 0.7) 200px,
+    rgba(39, 33, 33, 0) 100%
+  );
+  transition: background 0.3s;
+}
+
+.dark-theme #search_field:focus {
+  box-shadow: 0px 0px 20px 0px rgba(27, 22, 22, 0.8);
+}
+
+/***************************************************************
+************************** MAIN AREA ***************************
+***************************************************************/
+
+/* title menu ... */
+
+.dark-theme [title="More options"] svg {
+  color: #ab6341;
+}
+
+/* text mark/highlight */
+
+.dark-theme mark {
+  background: #196755;
+  color: #e0d3c9;
+}
+
+/* bold and italics */
+
+.dark-theme b,
+.dark-theme strong,
+.dark-theme i {
+  color: #baa695;
+}
+
+/* page reference */
+
+.dark-theme .page-reference:hover {
+  background: var(--ls-tertiary-background-color);
+}
+
+.dark-theme .references-blocks .page-reference:hover {
+  background: var(--ls-tertiary-background-color);
+}
+
+.dark-theme .page-reference .text-gray-500 {
+  /* page brackets */
+  opacity: 0.5;
+}
+
+/* block reference */
+
+.dark-theme .block-ref {
+  background: rgba(121, 94, 110, 0.5);
+  color: #e0d8cb;
+  border-bottom-color: rgba(121, 85, 106, 0.5);
+}
+
+/* selected block or higlighted page link */
+
+.dark-theme .ls-block.selected .page-reference:hover,
+.dark-theme mark .page-reference:hover {
+  background: #145042;
+}
+
+.dark-theme .ls-block.selected .page-ref,
+.dark-theme mark .page-ref {
+  color: #fff;
+}
+
+.dark-theme .ls-block.selected .page-ref:hover,
+.dark-theme mark .page-ref:hover {
+  color: #f7f7e8;
+}
+
+/* checkbox */
+
+.dark-theme .marker-switch {
+  color: #000;
+  background: #52373a;
+}
+
+.dark-theme .marker-switch:hover {
+  background: #5d3e41;
+}
+
+/***************************************************************
+************************ RIGHT SIDEBAR *************************
+***************************************************************/
+
+.dark-theme .cp__right-sidebar.is-open {
+  background: rgba(97, 67, 55, 0.05);
+}
+
+.dark-theme .cp__right-sidebar .sidebar-item .close svg {
+  color: #776857;
+}
+
+/***************************************************************
+**************************** MISC ******************************
+***************************************************************/
+
+.dark-theme textarea {
+  caret-color: #a79486;
+}
+
+.dark-theme ::selection {
+  background: #69b6a7;
+  color: #c4b2a6;
+}
+
+/* settings switcher */
+
+.dark-theme .bg-indigo-600 {
+  background: #dd745b;
+}
+
+.dark-theme .bg-indigo-600:hover {
+  background: #eb8e77;
+}
+
+/***************************************************************
+****************************************************************
+****************************************************************
+************************ LIGHT - SEPIA *************************
+****************************************************************
+****************************************************************
+***************************************************************/
+
+.white-theme,
+html[data-theme="light"] {
+  --ls-primary-background-color: #f9ce00;
+  --ls-search-background-color: #f3ecd8 /*f1ece5*/;
+  --ls-secondary-background-color: #ff7300 /*E8E3DB*/;
+  --ls-tertiary-background-color: #efe6cc /*#e7e1d7*/;
+  --ls-quaternary-background-color: #241000 /*#e1dbd0*/;
+  --ls-block-properties-background-color: var(--ls-secondary-background-color);
+  --ls-block-bullet-border-color: #dedede;
+  --ls-block-bullet-color: rgba(67, 63, 56, 0.25);
+  --ls-guideline-color: rgba(46, 27, 5, 0.08);
+  --ls-primary-text-color: #232323 /*433F38*/;
+  --ls-title-text-color: var(--ls-primary-text-color);
+  --ls-link-text-color: #72866c;
+  --ls-link-text-hover-color: #949e91;
+  --ls-link-ref-text-color: #9f5d5d;
+  --ls-link-ref-text-hover-color: #743d3d;
+  --ls-tag-text-color: var(--ls-link-ref-text-color);
+  --ls-tag-text-hover-color: var(--ls-link-ref-text-hover-color);
+  --ls-page-checkbox-color: #b0c3ad;
+  --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
+  --ls-page-blockquote-border-color: #7d9bb1;
+  --ls-block-highlight-color: #d4d1cd;
+  --ls-icon-color: #c1bdb7;
+  --color-level-1: var(--ls-secondary-background-color);
+  --color-level-2: var(--ls-tertiary-background-color);
+}
+
+::selection,
+mark {
+  background-color: #c19d00 !important;
+  color: var(--ls-primary-text-color) !important;
+}
+
+/***************************************************************
+***************************** TOP ******************************
+***************************************************************/
+
+/* gradient on top for aesthetics 
+
+.white-theme .cp__sidebar-main-content:before {
+    background: linear-gradient(to bottom, rgba(241, 236, 229, .7) 0%, rgba(241, 236, 229, 0) 100%);
+}
+
+.white-theme .cp__sidebar-main-content:after {
+    background: linear-gradient(to top, rgba(241, 236, 229, .7) 0%, rgba(241, 236, 229, 0) 100%);
+}
+*/
+
+/* < > buttons */
+
+.white-theme a[title="Go Back"],
+.white-theme a[title="Go Forward"] {
+  background: rgba(241, 236, 229, 1);
+}
+
+.white-theme a[title="Go Back"]:hover,
+.white-theme a[title="Go Forward"]:hover {
+  background: #fff;
+}
+
+/* search-field */
+
+.white-theme #search_field {
+  background: linear-gradient(
+    to right,
+    rgba(241, 236, 229, 1) 0%,
+    rgba(241, 236, 229, 0.7) 200px,
+    rgba(241, 236, 229, 0) 100%
+  );
+  transition: background 0.3s;
+}
+
+.white-theme #search_field:focus {
+  box-shadow: 0px 0px 20px 0px rgba(252, 250, 246, 0.8);
+}
+
+/***************************************************************
+************************** MAIN AREA ***************************
+***************************************************************/
+
+/* title menu ... */
+
+.white-theme [title="More options"] svg {
+  color: #bd7467;
+}
+
+/* text mark/highlight */
+
+.white-theme mark {
+  background: #a8b9b1;
+}
+
+/* page reference */
+
+.white-theme .page-reference {
+  background: rgba(232, 227, 219, 0.6);
+}
+
+.white-theme .page-reference:hover {
+  background: #ff7300 /*E8E3DB*/;
+}
+
+.white-theme .references-blocks .page-reference {
+  background: none;
+}
+
+.white-theme .references-blocks .page-reference:hover {
+  background: #d5d3c9;
+}
+
+.white-theme .page-reference .text-gray-500 {
+  opacity: 1;
+  color: #cac4ae;
+}
+
+/* block reference */
+
+.white-theme .block-ref {
+  background: rgba(142, 40, 40, 0.5);
+  color: #fff;
+  border-bottom-color: rgba(64, 31, 31, 0.5);
+}
+
+.white-theme .block-ref a {
+  color: #fff;
+}
+
+/* checkbox */
+
+.white-theme .form-checkbox {
+  background-color: var(--ls-page-checkbox-color);
+}
+
+.white-theme .marker-switch {
+  color: #6b6760;
+  background: #e0ded7;
+}
+
+.white-theme .marker-switch:hover {
+  background: #dad1c1;
+}
+
+/***************************************************************
+************************ RIGHT SIDEBAR *************************
+***************************************************************/
+
+.white-theme .cp__right-sidebar.is-open {
+  background: rgba(128, 122, 92, 0.05);
+}
+
+/***************************************************************
+**************************** MISC ******************************
+***************************************************************/
+
+.white-theme textarea {
+  caret-color: #cc515c;
+}
+
+.white-theme .ls-block.selected {
+  border-bottom-color: #c7c2bc;
+}
+
+.white-theme ::selection {
+  background: #cedbcc;
+}
+
+.editor-inner .uniline-block:is(.h1, .h2),
+.ls-block :is(h1, h2) {
+  /*make line below headings thicker*/
+  border-bottom-width: 2px;
+}
+
+#app-container {
+  /*background image*/
+  background-image: url("https://res.cloudinary.com/candidexmedia/image/upload/v1649765696/Digitized%20Diaspora%20Memory/yellow_-_ekzmm2.png");
+}
+
+.page {
+  /*I don't think this works*/
+  transition: 0.5s opacity;
+}
+
+
+
+/*** Publishing: Hide things that aren't very useful for a read-only view ***/
+/** Code by solarkraft: https://gist.github.com/solarkraft/b05e9058ca2cda40a4d6e03c52dff025 */
+
+/** Hide page properties (public pages will always have public: true) */
+.content .pre-block {
+  display: none;
+}
+
+/** Title */
+/* Make title non-editable */
+#main-container .page-title {
+  pointer-events: none;
+}
+
+/** Hide useless sidebar stuff */
+.nav-header .flashcards-nav {
+  display: none;
+}
+.nav-header .journals-nav {
+  display: none;
+}
+/*.nav-header .graph-view-nav { display: none; }*/
+
+/** Header */
+/* Hide right side of header buttons  (only useful setting is light/dark theme and can still be done using tt, graph is somewhat broken, home is covered by "All Pages")  */
+#head div.r {
+  display: none;
+}
+
+/** All pages */
+/* Hide selection checkbox (nothing can be done with it) */
+.cp__all_pages table .selector {
+  display: none;
+}
+/* Hide more columns (not that they don't work, they just don't seem very useful) */
+.cp__all_pages table .backlinks {
+  display: none;
+}
+.cp__all_pages table .created-at {
+  display: none;
+}
+/* Hide delete button */
+.cp__all_pages .actions .actions-wrap {
+  display: none;
+}
+/* Hide more page modification options/things that don't work */
+.cp__all_pages .actions div.r {
+  display: none;
+}
+/* Fix search bar spacing */
+.cp__all_pages .actions .search-wrap {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/** Image */
+/* Remove delete button */
+a.delete {
+  display: none;
+}
+/* Disable resizing */
+.resize {
+  resize: none;
+}
+
+/** Hide graph settings (they're ineffective, only the desktop app's while exporting seem to matter, search doesn't work either) */
+.graph-filters {
+  display: none;
+}
+
+/** Hide recent pages (seems to be ineffective on web)*/
+.nav-content-item.recent {
+  display: none;
+}
+
+/* Hide context menu (mostly ineffective) */
+#custom-context-menu {
+  display: none;
+}
+
+/** Disable dragging of blocks (also disables zooming) */
+.ls-block > div > div > a:not(.block-control) {
+  pointer-events: none;
+}
+
+/** Remove superfluous spacing on block embeds in Firefox */
+.block-content.inline {
+  white-space: revert;
+}
