@@ -226,9 +226,11 @@ h4 {
   font-weight: 900;
 }
 
-
-h1.title, .page-properties, .block-properties, .page-hierachy {
-  display: none; / *hide title* /
+h1.title,
+.page-properties,
+.block-properties,
+.page-hierachy {
+  display: none; /*hide title*/
 }
 
 h1 {
@@ -794,6 +796,3 @@ mark {
   /*I don't think this works*/
   transition: 0.5s opacity;
 }
-
-
-
