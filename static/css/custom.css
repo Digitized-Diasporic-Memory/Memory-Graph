@@ -620,7 +620,7 @@ html[data-theme="light"] {
   --ls-search-background-color: #f3ecd8 /*f1ece5*/;
   --ls-secondary-background-color: #ff7300 /*E8E3DB*/;
   --ls-tertiary-background-color: #efe6cc /*#e7e1d7*/;
-  --ls-quaternary-background-color: #241000 /*#e1dbd0*/;
+  --ls-quaternary-background-color: #ffa441 /*#e1dbd0*/;
   --ls-block-properties-background-color: var(--ls-secondary-background-color);
   --ls-block-bullet-border-color: #dedede;
   --ls-block-bullet-color: rgba(67, 63, 56, 0.25);
@@ -781,11 +781,9 @@ mark {
   background: #cedbcc;
 }
 
-.editor-inner .uniline-block:is(.h1, .h2),
-.ls-block :is(h1, h2) {
-  /*make line below headings thicker*/
-  border-bottom-width: 2px;
-}
+/***************************************************************
+**************************** MINE ******************************
+***************************************************************/
 
 #app-container {
   /*background image*/
@@ -795,4 +793,119 @@ mark {
 .page {
   /*I don't think this works*/
   transition: 0.5s opacity;
+}
+
+.bullet-container {
+  /*hide bullets*/
+  display: none;
+}
+
+.favorites {
+  /*hide favorites from left sidebar*/
+  display: none;
+}
+
+.editor-inner .uniline-block:is(.h1, .h2),
+.ls-block :is(h1, h2) {
+  /*line under headings*/
+  border-bottom: 2px solid #241000;
+}
+
+.left-sidebar-inner a.item > span {
+  /*make text on left sidebar bigger*/
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.ti-menu-2::before {
+  /*make hamburger menu bigger*/
+  font-size: 1.6em;
+}
+
+/***************************************************************
+**************************** SOLARKRAFT ******************************
+***************************************************************/
+
+/*** Publishing: Hide things that aren't very useful for a read-only view ***/
+/** Code by solarkraft: https://gist.github.com/solarkraft/b05e9058ca2cda40a4d6e03c52dff025 */
+
+/** Hide page properties (public pages will always have public: true) */
+.content .pre-block {
+  display: none;
+}
+
+/** Title */
+/* Make title non-editable */
+#main-container .page-title {
+  pointer-events: none;
+}
+
+/** Hide useless sidebar stuff */
+.nav-header .flashcards-nav {
+  display: none;
+}
+.nav-header .journals-nav {
+  display: none;
+}
+
+/** All pages */
+/* Hide selection checkbox (nothing can be done with it) */
+.cp__all_pages table .selector {
+  display: none;
+}
+
+/* Hide more columns in "All pages" */
+.cp__all_pages table .created-at {
+  display: none;
+}
+
+/* Hide delete button */
+.cp__all_pages .actions .actions-wrap {
+  display: none;
+}
+
+/* Hide more page modification options/things that don't work */
+.cp__all_pages .actions div.r {
+  display: none;
+}
+
+/* Fix search bar spacing */
+.cp__all_pages .actions .search-wrap {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/** Image */
+/* Remove delete button */
+a.delete {
+  display: none;
+}
+/* Disable resizing */
+.resize {
+  resize: none;
+}
+
+/** Hide graph settings (they're ineffective, only the desktop app's while exporting seem to matter, search doesn't work either) */
+.graph-filters {
+  display: none;
+}
+
+/** Hide recent pages (seems to be ineffective on web)*/
+.nav-content-item.recent {
+  display: none;
+}
+
+/* Hide context menu (mostly ineffective) */
+#custom-context-menu {
+  display: none;
+}
+
+/** Disable dragging of blocks (also disables zooming) */
+.ls-block > div > div > a:not(.block-control) {
+  pointer-events: none;
+}
+
+/** Remove superfluous spacing on block embeds in Firefox */
+.block-content.inline {
+  white-space: revert;
 }
