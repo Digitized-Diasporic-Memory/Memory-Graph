@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
 
-/*Plyr css*/
-@import url(https://unpkg.com/plyr@3/dist/plyr.css);
+/*Plyr css
+@import url(https://unpkg.com/plyr@3/dist/plyr.css);*/
 
 @font-face {
   font-family: "Standard";
@@ -237,7 +237,8 @@ h1 {
   text-transform: uppercase;
   line-height: 1.2;
   padding-top: 1em; /*add more space abive headings*/
-  padding-bottom: 0.2em; /*add more space below headings and underneath line*/
+  padding-bottom: 0.2em; /*add more space below headings*/
+  margin-bottom: 0.2em !important /*add more underneath heading line*/;
 }
 
 /* page reference */
