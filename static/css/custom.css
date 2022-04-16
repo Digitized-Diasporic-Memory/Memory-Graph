@@ -83,8 +83,8 @@
   --ls-page-text-size: 1.5em;
   --ls-page-title-size: 36px;
 
-  /*audio player*/
-  --plyr-color-main: #ff7300;
+  /*audio player
+  --plyr-color-main: #f98c00;
   --plyr-audio-controls-background: transparent;
   --plyr-audio-control-color: #0f6d35;
   --plyr-font-family: inherit;
@@ -93,7 +93,7 @@
   --plyr-tooltip-background: #c19d00;
   --plyr-tooltip-color: #241000;
   --plyr-menu-color: #241000;
-  --plyr-range-thumb-background: #0f6d35;
+  --plyr-range-thumb-background: #0f6d35;*/
 }
 
 .cp__sidebar-main-layout {
@@ -422,7 +422,7 @@ html[data-theme="dark"] {
 
   --ls-primary-background-color: #f9ce00;
   --ls-search-background-color: #f3ecd8 /*f1ece5*/;
-  --ls-secondary-background-color: #ff7300 /*E8E3DB*/;
+  --ls-secondary-background-color: #f98c00 /*E8E3DB*/;
   --ls-tertiary-background-color: #efe6cc /*#e7e1d7*/;
   --ls-quaternary-background-color: #241000 /*#e1dbd0*/;
   --ls-block-properties-background-color: var(--ls-secondary-background-color);
@@ -619,7 +619,7 @@ html[data-theme="dark"] {
 html[data-theme="light"] {
   --ls-primary-background-color: #f9ce00;
   --ls-search-background-color: #f3ecd8 /*f1ece5*/;
-  --ls-secondary-background-color: #ff7300 /*E8E3DB*/;
+  --ls-secondary-background-color: #f98c00 /*E8E3DB*/;
   --ls-tertiary-background-color: #efe6cc /*#e7e1d7*/;
   --ls-quaternary-background-color: #ffa441 /*#e1dbd0*/;
   --ls-block-properties-background-color: var(--ls-secondary-background-color);
@@ -715,7 +715,7 @@ mark {
 }
 
 .white-theme .page-reference:hover {
-  background: #ff7300 /*E8E3DB*/;
+  background: #f98c00 /*E8E3DB*/;
 }
 
 .white-theme .references-blocks .page-reference {
@@ -788,7 +788,9 @@ mark {
 
 #app-container {
   /*background image*/
-  background-image: url("https://res.cloudinary.com/candidexmedia/image/upload/v1649765696/Digitized%20Diaspora%20Memory/yellow_-_ekzmm2.png");
+  background: #f9ce00
+    url("https://res.cloudinary.com/candidexmedia/image/upload/v1649765696/Digitized%20Diaspora%20Memory/yellow_-_ekzmm2.png")
+    /*custom*/;
 }
 
 .page {
