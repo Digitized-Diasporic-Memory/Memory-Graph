@@ -833,7 +833,21 @@ mark {
   padding: 0.6933333333rem 1.3333333333rem;
 }
 
-.big-button:hover {
+@media screen and (max-width: 515px) {
+  .big-button {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 417px) {
+  .big-button {
+    font-size: 0.6em;
+  }
+}
+
+.big-button:hover,
+.big-button:focus,
+.big-button:active {
   color: #f9ce00;
   background: #241000;
 }
