@@ -2,7 +2,7 @@
 
 # Diasporic Memory Graph
 
-This interactive network graph is part of the [Digitized Diasporic Memory](diasporamemory.com/) graduate thesis project. This web application, built on top of [Logseq](logseq.com/), contains over 130 audio snippets crowd-sourced from Black people of African-descent living on Turtle Island. Participants were invited to respond to each other asynchronously and during a series of synchronous recording sessions.
+This interactive network graph is part of the [Digitized Diasporic Memory](diasporamemory.com/) graduate thesis project. The present web application, built on top of [Logseq](logseq.com/), contains over 130 audio snippets crowd-sourced from Black people of African-descent living on Turtle Island. Participants were invited to respond to each other asynchronously and during a series of synchronous recording sessions.
 
 Come explore our interactive chain of memories!
 
