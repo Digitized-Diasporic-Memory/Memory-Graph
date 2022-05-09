@@ -48,3 +48,7 @@ As a guest on these lands, I am committed to listening to Indigenous people and 
 - [ ] Add remaining transcripts
 - [ ] Fix duplicate pages issue caused by slash in title
 - [ ] Create learning materials on the diasporamemory.com blog
+
+
+# License
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
