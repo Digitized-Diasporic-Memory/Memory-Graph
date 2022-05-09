@@ -46,5 +46,5 @@ As a guest on these lands, I am committed to listening to Indigenous people and 
 
 # To-do
 - [ ] Add remaining transcripts
-- [ ] Fix duplictate pages issue caused by slash in title
+- [ ] Fix duplicate pages issue caused by slash in title
 - [ ] Create learning materials on the diasporamemory.com blog
