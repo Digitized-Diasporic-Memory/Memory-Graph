@@ -45,6 +45,6 @@ In the introduction to Hungry Listening: Resonant Theory for Indigenous Sound St
 As a guest on these lands, I am committed to listening to Indigenous people and working towards the strengthening of solidarity between Black and Indigenous communities. I will continue to reflect on my geographic positioning, connection to indigeneity, understanding of embodied place, relationship to settler-coloniality, and decolonial justice.
 
 # To-do
-[] Add remaining transcripts
-[] Fix duplictate pages issue caused by slash in title
-[] Create learning materials on the diasporamemory.com blog
+- [ ] Add remaining transcripts
+- [ ] Fix duplictate pages issue caused by slash in title
+- [ ] Create learning materials on the diasporamemory.com blog
