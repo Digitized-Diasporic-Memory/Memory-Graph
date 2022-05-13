@@ -33,7 +33,7 @@ As part of the Digitized Diasporic Memory thesis project, I conducted a month-lo
 
 These audio segments were submitted to a collaborative database, allowing other participants to respond to each other both synchronously and asynchronously. Participants engaged in cross-cultural sense-making, building upon the previous speaker’s remarks with reference points from their respective cultures.
 
-In the end, over 130 audio segments of over 2hrs of recording were catalogued in the database. The audio recordings are licensed under CC BY-NC 4.0 and have been made available for download.
+In the end, over 130 audio segments of over 2hrs of recording were catalogued in the database. The audio recordings are licensed under CC BY-NC 4.0 and [have been made available for download](https://diasporamemory.com/database/).
 
 To learn more about the thesis project, visit www.diasporamemory.com
 
