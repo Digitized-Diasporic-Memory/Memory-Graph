@@ -33,12 +33,12 @@ As part of the Digitized Diasporic Memory thesis project, I conducted a month-lo
 
 These audio segments were submitted to a collaborative database, allowing other participants to respond to each other both synchronously and asynchronously. Participants engaged in cross-cultural sense-making, building upon the previous speaker’s remarks with reference points from their respective cultures.
 
-In the end, over 130 audio segments of over 2hrs of recording were catalogued in the database. The audio recordings are licensed under CC BY-NC 4.0 and have been made available for download.
+In the end, over 130 audio segments of over 2hrs of recording were catalogued in the database. The audio recordings are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) and [have been made available for download](https://diasporamemory.com/database/).
 
 To learn more about the thesis project, visit www.diasporamemory.com
 
 # Land Acknowledgement
-I would like to take the time to honour the original owners and custodians of the land on which we inhabit and create. The present thesis was conceived while I was residing on Anishinābe Akì Territory and in T’karonto, the ancestral territory of the Haudenosaunee Confederacy, the Anishinābe, the Huron-wendat, the Chippewa, and the Mississaugas of the Credit River First Nations.
+I would like to take the time to honour the original owners and custodians of the land on which we inhabit and create. The present thesis was conceived while I was residing on Anishinābe Akì Territory and in T’karonto, the ancestral territory of the Haudenosaunee Confederacy, the Anishinābe, the Wendat, the Chippewa, and the Mississaugas of the Credit River First Nations.
 
 In the introduction to Hungry Listening: Resonant Theory for Indigenous Sound Studies, Dylan Robinson (2020) invites us to consider our listening biases, listening privilege, and listening ability as part of our critical listening positionality (p. 10). As the author explains, “by becoming aware of normative listening habits and abilities, we are better able to listen otherwise” (p. 11).
 
