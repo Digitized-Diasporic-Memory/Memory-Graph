@@ -1,4 +1,4 @@
-![Network Graph](https://user-images.githubusercontent.com/55474996/167474914-82d91ab1-3d52-4d4c-a447-893487eec30b.PNG)
+https://user-images.githubusercontent.com/55474996/174197379-b7e39331-3d26-4531-ab10-d9cc466164dd.mp4
 
 # Diasporic Memory Graph
 
@@ -52,3 +52,7 @@ As a guest on these lands, I am committed to listening to Indigenous people and 
 
 # License
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+
+![Network Graph](https://user-images.githubusercontent.com/55474996/167474914-82d91ab1-3d52-4d4c-a447-893487eec30b.PNG)
+
