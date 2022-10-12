@@ -2,7 +2,7 @@ https://user-images.githubusercontent.com/55474996/174197379-b7e39331-3d26-4531-
 
 # Diasporic Memory Graph
 
-This interactive network graph is part of the [Digitized Diasporic Memory](diasporamemory.com/) graduate thesis project. The present web application, built on top of [Logseq](logseq.com/), contains over 130 audio snippets crowd-sourced from Black people of African-descent living on Turtle Island. Participants were invited to respond to each other asynchronously and during a series of synchronous recording sessions.
+This interactive network graph is part of the [Digitized Diasporic Memory](diasporamemory.com/) graduate thesis project. The present web application, built on top of [Logseq](logseq.com/) and a heavily edited version of the [Bujo themes](https://piotrsss.github.io/logseq-tools/public/#/bujo-themes), contains over 130 audio snippets crowd-sourced from Black people of African-descent living on Turtle Island. Participants were invited to respond to each other asynchronously and during a series of synchronous recording sessions.
 
 Come explore our interactive chain of memories!
 
@@ -47,6 +47,7 @@ As a guest on these lands, I am committed to listening to Indigenous people and 
 # To-do
 - [ ] Gnerate and add transcripts
 - [ ] Create learning materials on the diasporamemory.com blog
+- [ ] Fix graph button issue
 - [x] Fix duplicate pages issue caused by slash in title
 - [x] Fix styling
 
