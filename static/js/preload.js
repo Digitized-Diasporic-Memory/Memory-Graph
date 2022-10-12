@@ -72,7 +72,7 @@ contextBridge.exposeInMainWorld('apis', {
 
   showItemInFolder (fullpath) {
     if (IS_WIN32) {
-      shell.openPath(path.dirname(fullpath))
+      shell.openPath(path.dirname(fullpath).replaceAll("/", "\\"))
     } else {
       shell.showItemInFolder(fullpath)
     }
@@ -83,11 +83,12 @@ contextBridge.exposeInMainWorld('apis', {
    *
    * @param {string} html html file with embedded state
    */
-  exportPublishAssets (html, customCSSPath, repoPath, assetFilenames, outputDir) {
+  exportPublishAssets (html, customCSSPath, exportCSSPath, repoPath, assetFilenames, outputDir) {
     ipcRenderer.invoke(
       'export-publish-assets',
       html,
       customCSSPath,
+      exportCSSPath,
       repoPath,
       assetFilenames,
       outputDir
@@ -165,6 +166,10 @@ contextBridge.exposeInMainWorld('apis', {
 
   setZoomFactor (factor) {
     webFrame.setZoomFactor(factor)
+  },
+
+  setZoomLevel (level) {
+    webFrame.setZoomLevel(level)
   },
 
   isAbsolutePath: path.isAbsolute.bind(path)

@@ -1,0 +1,130 @@
+@import url(custom.css); /*Logseq isn't including custom.css in HTML exports, for some reason*/
+
+h1.title,
+.page-properties,
+.block-properties,
+.page-hierachy {
+  display: none; /*hide title, page properties, etc.*/
+}
+
+.tippy-tooltip-content h2.font-bold.text-lg {
+  display: none; /*hide title when hovering over links*/
+}
+
+.block-content .asset-container:focus .asset-action-bar,
+.block-content .asset-container:hover .asset-action-bar {
+  /*hide image delete options*/
+  display: none;
+}
+
+.flex-1.page.relative > :last-child {
+  /*hide unlinked references*/
+  display: none;
+}
+
+.cp__right-sidebar-settings.hide-scrollbar.gap-1 > .text-sm:first-of-type,
+.cp__right-sidebar-settings.hide-scrollbar.gap-1 > .text-sm:last-of-type {
+  /*Hide "Contents" and "Help" in right sidebar*/
+  display: none;
+}
+
+.cp__right-sidebar-scrollable .flex.items-center.justify-between.mb-0 {
+  /*Hide "Show Journals" toggle in "Page Graph" in right sidebar*/
+  display: none;
+}
+
+.menu-links-wrapper > a:first-of-type,
+.menu-links-wrapper > a:nth-of-type(2),
+.menu-links-wrapper > a:nth-of-type(3),
+.menu-links-wrapper > a:last-of-type {
+  /*Hide right-hand settings menu items (...) : "Add to favourites", "Delete page", "Presentation", "Join the community"*/
+  display: none;
+}
+
+/***************************************************************
+**************************** SOLARKRAFT ******************************
+***************************************************************/
+
+/*** Publishing: Hide things that aren't very useful for a read-only view ***/
+/** Code by solarkraft: https://gist.github.com/solarkraft/b05e9058ca2cda40a4d6e03c52dff025 */
+
+/** Hide page properties (public pages will always have public: true) */
+.content .pre-block {
+  display: none;
+}
+
+/** Title */
+/* Make title non-editable */
+#main-container .page-title {
+  pointer-events: none;
+}
+
+/** Hide useless sidebar stuff */
+.nav-header .flashcards-nav {
+  display: none;
+}
+.nav-header .journals-nav {
+  display: none;
+}
+
+/** All pages */
+/* Hide selection checkbox (nothing can be done with it) */
+.cp__all_pages table .selector {
+  display: none;
+}
+
+/* Hide more columns in "All pages" */
+.cp__all_pages table .created-at {
+  display: none;
+}
+
+/* Hide delete button */
+.cp__all_pages .actions .actions-wrap {
+  display: none;
+}
+
+/* Hide more page modification options/things that don't work */
+.cp__all_pages .actions div.r {
+  display: none;
+}
+
+/* Fix search bar spacing */
+.cp__all_pages .actions .search-wrap {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/** Image */
+/* Remove delete button */
+a.delete {
+  display: none;
+}
+/* Disable resizing */
+.resize {
+  resize: none;
+}
+
+/** Hide graph settings (they're ineffective, only the desktop app's while exporting seem to matter, search doesn't work either) */
+.graph-filters {
+  display: none;
+}
+
+/** Hide recent pages (seems to be ineffective on web)*/
+.nav-content-item.recent {
+  display: none;
+}
+
+/* Hide context menu (mostly ineffective) */
+#custom-context-menu {
+  display: none;
+}
+
+/** Disable dragging of blocks (also disables zooming) */
+.ls-block > div > div > a:not(.block-control) {
+  pointer-events: none;
+}
+
+/** Remove superfluous spacing on block embeds in Firefox */
+.block-content.inline {
+  white-space: revert;
+}
