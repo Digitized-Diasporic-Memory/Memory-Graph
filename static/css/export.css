@@ -1,4 +1,4 @@
-@import url(custom.css); /*Logseq isn't including custom.css in HTML exports, for some reason*/
+@import url(custom.css); /*Logseq isn't including custom.css in HTML exports anymore, for some reason*/
 
 h1.title,
 .page-properties,
