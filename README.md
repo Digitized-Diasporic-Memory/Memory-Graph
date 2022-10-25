@@ -8,7 +8,8 @@ Come explore our interactive chain of memories!
 
 ## You can access the live version of the network graph here → https://demo.diasporamemory.com/
 
-![audio snippet page](https://user-images.githubusercontent.com/55474996/167474936-54202213-64d3-443f-be6c-a2edd1596253.PNG)
+![audio snippet page](https://user-images.githubusercontent.com/55474996/197865526-e5dd2e3b-1970-4790-a100-51e3f5d41062.png)
+
 
 # Getting Started
 1. Click on the "Graph" button at the top-right.
