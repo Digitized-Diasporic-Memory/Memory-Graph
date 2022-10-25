@@ -8,7 +8,8 @@ Come explore our interactive chain of memories!
 
 ## You can access the live version of the network graph here → https://demo.diasporamemory.com/
 
-![audio snippet page](https://user-images.githubusercontent.com/55474996/167474936-54202213-64d3-443f-be6c-a2edd1596253.PNG)
+![audio snippet page](https://user-images.githubusercontent.com/55474996/197865526-e5dd2e3b-1970-4790-a100-51e3f5d41062.png)
+
 
 # Getting Started
 1. Click on the "Graph" button at the top-right.
@@ -45,7 +46,7 @@ In the introduction to Hungry Listening: Resonant Theory for Indigenous Sound St
 As a guest on these lands, I am committed to listening to Indigenous people and working towards the strengthening of solidarity between Black and Indigenous communities. I will continue to reflect on my geographic positioning, connection to indigeneity, understanding of embodied place, relationship to settler-coloniality, and decolonial justice.
 
 # To-do
-- [ ] Gnerate and add transcripts
+- [ ] Generate and add transcripts
 - [ ] Create learning materials on the diasporamemory.com blog
 - [x] Fix graph button issue
 - [x] Fix duplicate pages issue caused by slash in title
