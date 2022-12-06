@@ -819,11 +819,6 @@ mark {
   transition: 0.5s opacity;
 }*/
 
-.bullet-container {
-  /*hide bullets*/
-  display: none;
-}
-
 .favorites {
   /*hide favorites from left sidebar*/
   display: none;
@@ -995,4 +990,46 @@ html {
   background: #edc600;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+}
+
+/*CUSTOM DETAILS STUFF*/
+
+details summary {
+  /*custom*/
+  cursor: pointer;
+}
+
+details[open] summary ~ * {
+  /*custom*/
+  animation: open 0.5s ease-in-out;
+}
+
+details[close] summary ~ * {
+  /*custom*/
+  animation: close 0.5s ease-in-out;
+}
+
+@keyframes open {
+  /*custom*/
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes close {
+  /*custom*/
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+details p {
+  /*add spacing between paragraphs*/
+  margin-bottom: 1.5rem;
 }

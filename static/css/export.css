@@ -1,5 +1,3 @@
-@import url(custom.css); /*Logseq isn't including custom.css in HTML exports anymore, for some reason*/
-
 h1.title,
 .page-properties,
 .block-properties,
@@ -38,6 +36,11 @@ h1.title,
 .menu-links-wrapper > a:nth-of-type(3),
 .menu-links-wrapper > a:last-of-type {
   /*Hide right-hand settings menu items (...) : "Add to favourites", "Delete page", "Presentation", "Join the community"*/
+  display: none;
+}
+
+.bullet-container {
+  /*hide bullets*/
   display: none;
 }
 
