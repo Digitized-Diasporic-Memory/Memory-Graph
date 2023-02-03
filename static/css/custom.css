@@ -950,12 +950,17 @@ textarea::placeholder {
   /* right "Contents" panel -> remove extra space above title in contents, set line color */
   padding-top: 0;
   border-bottom-color: #f9ce00;
-  margin-bottom: 2em;
 }
 
 .sidebar-item.content.color-level.px-4.shadow-md .flex.flex-row.justify-center {
   /*make "Contents" title right above text hidden"*/
   visibility: hidden;
+}
+
+#right-sidebar-container
+  .sidebar-item-list.flex-1.scrollbar-spacing.flex.flex-col.gap-2 {
+  /*right "Contents" panel -> align delete button to right panel icon*/
+  scrollbar-gutter: stable;
 }
 
 .content .block-body p,
@@ -970,9 +975,10 @@ textarea::placeholder {
 }
 
 .content .block-body ol {
-  /*right "Contents" panel -> fix list so that there's indent on the 2nd line, add space*/
+  /*right "Contents" panel -> fix list so that there's indent on the 2nd line, add spaces*/
   list-style-position: outside;
   margin-left: 2em;
+  margin-top: 1.5em;
 }
 
 .content .block-body li {
