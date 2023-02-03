@@ -795,9 +795,10 @@ mark {
   caret-color: #cc515c;
 }
 
+/* MOD -> REMOVED
 .white-theme .ls-block.selected {
   border-bottom-color: #c7c2bc;
-}
+} */
 
 .white-theme ::selection {
   background: #cedbcc;
