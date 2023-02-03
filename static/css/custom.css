@@ -963,25 +963,25 @@ textarea::placeholder {
   scrollbar-gutter: stable;
 }
 
-.content .block-body p,
-.content .block-body a {
+#right-sidebar-container .content .block-body p,
+#right-sidebar-container .content .block-body a {
   /*right "Contents" panel -> make the text orange instead of black*/
   color: #f9ce00;
 }
 
-.content .block-body a {
+#right-sidebar-container .content .block-body a {
   /*right "Contents" panel -> add underline to links*/
   text-decoration: underline;
 }
 
-.content .block-body ol {
+#right-sidebar-container .content .block-body ol {
   /*right "Contents" panel -> fix list so that there's indent on the 2nd line, add spaces*/
   list-style-position: outside;
   margin-left: 2em;
   margin-top: 1.5em;
 }
 
-.content .block-body li {
+#right-sidebar-container .content .block-body li {
   /*right "Contents" panel -> add space between list items*/
   margin-bottom: 2em;
 }
