@@ -939,21 +939,29 @@ textarea::placeholder {
     /* left sidebar menu items background colour on hover*/;
 }
 
-.content .block-body p,
-.content .block-body a {
-  /*make the text inside right "Contents" panel orange instead of black*/
-  color: #f9ce00;
-}
-
-.sidebar-item.content.color-level.px-4.shadow-md .flex.flex-row.justify-center {
-  visibility: hidden;
-}
-
 #right-sidebar .cp__header a,
 #right-sidebar .cp__header button,
 #right-sidebar .cp__right-sidebar-topbar button {
   /*right "Contents" panel -> make the buttons at the very top light orange again so it's readable*/
   color: unset;
+}
+
+#right-sidebar-container .content h1 {
+  /* right "Contents" panel -> remove extra space above title in contents, set line color */
+  padding-top: 0;
+  border-bottom-color: #f9ce00;
+  margin-bottom: 2em;
+}
+
+.sidebar-item.content.color-level.px-4.shadow-md .flex.flex-row.justify-center {
+  /*make "Contents" title right above text hidden"*/
+  visibility: hidden;
+}
+
+.content .block-body p,
+.content .block-body a {
+  /*right "Contents" panel -> make the text orange instead of black*/
+  color: #f9ce00;
 }
 
 .content .block-body a {
@@ -962,7 +970,7 @@ textarea::placeholder {
 }
 
 .content .block-body ol {
-  /*right "Contents" panel -> fix list so that there'S indent on the 2nd line, add space*/
+  /*right "Contents" panel -> fix list so that there's indent on the 2nd line, add space*/
   list-style-position: outside;
   margin-left: 2em;
 }
@@ -970,11 +978,6 @@ textarea::placeholder {
 .content .block-body li {
   /*right "Contents" panel -> add space between list items*/
   margin-bottom: 2em;
-}
-
-.content .block-body h1 {
-  /* right "Contents" panel -> remove extra space above title in contents */
-  padding-top: 0;
 }
 
 .color-level {
