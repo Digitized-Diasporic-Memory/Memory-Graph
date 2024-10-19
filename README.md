@@ -1,6 +1,6 @@
 https://user-images.githubusercontent.com/55474996/174197379-b7e39331-3d26-4531-ab10-d9cc466164dd.mp4
 
-# Diasporic Memory Graph
+# Diasporic Memory Graph 
 
 This interactive network graph is part of the [Digitized Diasporic Memory](diasporamemory.com/) graduate thesis project. The present web application, built on top of [Logseq](logseq.com/) and a heavily edited version of the [Bujo themes](https://piotrsss.github.io/logseq-tools/public/#/bujo-themes), contains over 130 audio snippets crowd-sourced from Black people of African-descent living on Turtle Island. Participants were invited to respond to each other asynchronously and during a series of synchronous recording sessions.
 
